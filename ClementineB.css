@@ -1,18 +1,101 @@
 .main{
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-left: 190px;
+    margin-right: 190px;
+    margin-top: 15px;
 }
 
 /*Caracteristiques communes*/
-.titreMain, .copyright {
+.footer, .topnav a, .text {
     color: #f0f0f0;
 }
 
-.titreMain {
-    text-align: left;
-    font-size: 40px;
-    margin-top: 50px;
-    margin-bottom: 60px;
+/*NAVIGATION BAR*/
+.topnav {
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 100px;
 }
+.topnav a {     
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;    
+}
+.topnav-right a:hover {   /* quand souris passe dessus */
+    color: #d3d3d3;
+}
+.topnav-left {  /*"Clémentine B"*/
+    font-size: 40px;
+    float: left;
+}
+.topnav-right { /*"Home"*/
+    font-size: 20px;
+    float: right;
+    padding-top: 15px;
+}
+
+/*GALLERIE*/
+.galerie {
+    display: flex;
+    flex-flow:row wrap;
+}
+.carte {
+    overflow: hidden;
+}
+.carte{
+    width: 15vw;
+}
+.carte-image {
+    width: 13vw;
+}
+.carte-image {
+    display: block;
+    cursor: pointer;
+    padding: 1vw;  /* espace entre images */
+}
+
+/*TITRE OVERLAY IMAGES*/
+.container {    
+    position: relative;
+    width: 15vw;
+}
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: black;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.container:hover .overlay {
+    opacity: 0.7;
+    background-color: black;
+}
+.text {
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*COPYRIGHTS*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+ }
