@@ -1,13 +1,13 @@
 .main{
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 1.5vw;
+    margin-bottom: 1vw;
 }
 
 /*Caracteristiques communes*/
-.titreMain, .navbar a, .dropbutton, .introduction, .titreMembres, .description {
-    color: #f0f0f0;
+.titreMain, .navbar a, .dropbutton, .dropdown-content a, .introduction, .titreMembres, .description {
+    color: #d3d3d3;
 }
 .introduction, .description{
     font-size: 18px;
@@ -16,7 +16,7 @@
 
 .titreMain {
     text-align: left;
-    font-size: 40px;
+    font-size: 42px;
     margin-bottom: 30px;
     margin-left: 15px;
 }
@@ -24,20 +24,14 @@
 /*NAVIGATION BAR & DROPDOWN MENU*/
 .navbar {
     overflow: hidden;
-
-    /*centered*/
-    /*float: none;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);*/
 }
-.navbar a { /* "Home" & "Contact" */
+.navbar a {
     font-size: 20px;
     float: left;
     text-decoration: none;
     text-align: center;
     /*padding: 15px;*/ 
-    margin-left: 20px; /*espacement entre les elements*/
+    margin-left: 16px; /*espacement entre les elements*/
 }
 .dropdown { /* "Portfolio" */
     float: left;
@@ -46,26 +40,27 @@
 .dropdown .dropbutton {
     font-size: 20px;
     background-color: black;
-    border: none;
-    /*padding: 15px;*/    
+    border: none;  
     margin-left: 20px; /*espacement avec les elements*/
+    cursor: pointer;
+
 }
 .navbar a:hover, .dropdown:hover .dropbutton,.dropdown-content a:hover{
     /* Souligne texte quand souris passe dessus */
     text-decoration: underline;
     text-decoration-style: solid;
     text-decoration-color: #c0c0c0;
-    text-decoration-thickness: 1.2px;
+    text-decoration-thickness: 1.1px;
 }
 .dropdown-content {
     display: none;
     position: absolute;
     min-width: 160px;
+    padding-top: 7px; /*espacement entre "portfolio" & "Astrid"*/
 }
 .dropdown-content a {
     float: none;
-    color: #f0f0f0;
-    padding: 5px 16px;
+    padding: 7px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
@@ -74,13 +69,8 @@
 
 /*INTRODUCTION*/
 .introduction{
-   /*margin-top: 5vw;
-    margin-bottom: 6vw;
-    margin-left: 1vw;
-    margin-right: 20vw;*/
-
-    margin-top: 8vw;
-    margin-bottom: 8vw;
+    margin-top: 9vw;
+    margin-bottom: 7vw;
     margin-left: 12vw;
     margin-right: 12vw;
 }
@@ -89,16 +79,12 @@
 .titreMembres {
     font-size: 25px;
     text-align: center;
-    margin-bottom: 60px;
-}
-.clearfix {
-    overflow: auto;
-    display: block;
+    margin-bottom: 4vw;
 }
 .portrait {
     float: left;
-    width: 50%;
+    width: 20vw;
 }
 .description {
-    padding: 20px;
+    float: right;
 }
