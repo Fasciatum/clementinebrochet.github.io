@@ -35,7 +35,12 @@
 }
 
 /*VIDEO*/
-.description{
+.video {
+    float: left;
+    padding-right: 5vw; /*espace avec texte*/
+    border: none;
+}
+.description {
     font-size: 18px;
     text-align: justify;
 }

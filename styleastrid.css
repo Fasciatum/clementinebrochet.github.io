@@ -1,0 +1,78 @@
+/* CSS Astrid*/
+.main {
+    background-color: #5B1B46;
+}
+
+.navbar {
+    overflow: hidden;
+
+}
+.navbar a { /* HOME BUTTON */
+    font-size: 20px;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 8vw; 
+    padding: 5px;   
+    color: #ffffff; 
+    font-family: DM Sans;
+}
+
+
+.carte-description {
+    font-family: DM Sans;
+    background-color: #C2A3C0;
+    padding: 10px;
+    color: #ffffff; 
+}
+/* titre */
+.titre {
+    display: inline-block;
+    font-family: DM Sans;
+    background-color: #5B1B46;
+    font-size: 40px;
+    margin-bottom: 2vw;
+    margin-left: 35vw;
+    margin-right:35vw;
+    padding: 10px;
+    color: #ffffff; 
+}
+
+
+.paragraphe {
+    margin-left: 12vw;
+    margin-right:12vw;
+	font-family: DM Sans;
+	font-size: 18px;
+	line-height: 1.3;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	text-align: justify;
+	color: #ffffff;
+}
+
+
+.carte-image-1 {
+    width: 45vw;
+    display: block;
+    align: center; 
+    margin-left: 12vw;
+    margin-right: 12vw;
+}
+
+.carte {
+    overflow: hidden;
+    margin-top: 3vw;
+}
+
+.carte, .carte-image, .carte-description {
+    width: 27vw;
+}
+
+.galerie {
+    background-color: #5B1B46;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

@@ -41,22 +41,18 @@
 }
 .carte {
     overflow: hidden;
-    /*width: 18.5vw;    /*equivalent à container*/
     width: 19vw;
 }
 .carte-image {
-    /*width: 17.5vw;*/
     width: 17vw;
     display: block;
     cursor: pointer;
-    /*padding: 0.5vw;  /* espace entre images, proportionnel à width carte & carte-image*/
-    padding: 1vw;
+    padding: 1vw; /* espace entre images, proportionnel à width carte & carte-image*/
 }
 
 /*TITRE OVERLAY IMAGES*/
 .container {    
     position: relative;
-    /*width: 18.5vw;*/
     width: 19vw;
 }
 .image {
